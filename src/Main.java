@@ -1,4 +1,5 @@
 import models.Child;
+import models.Doctor;
 import models.Parent;
 
 import java.util.Scanner;
@@ -35,6 +36,18 @@ public class Main {
 
         System.out.println();
         parent.generateReport();
+
+        System.out.println("\n--- Doctor Details ---");
+        System.out.print("Enter doctor name: ");
+        String doctorName = scanner.nextLine();
+
+        System.out.print("Enter doctor contact: ");
+        String doctorContact = scanner.nextLine();
+
+        Doctor doctor = new Doctor(doctorName, doctorContact, child);
+
+        System.out.println();
+        doctor.generateReport();
 
         scanner.close();
     }
