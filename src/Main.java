@@ -1,4 +1,6 @@
 import models.Child;
+import models.Parent;
+
 import java.util.Scanner;
 
 public class Main {
@@ -22,11 +24,17 @@ public class Main {
 
         Child child = new Child(name, age, vaccineName, nextDoseDate);
 
-        System.out.println("\n--- Registered Child Details ---");
-        System.out.println("Name: " + child.getName());
-        System.out.println("Age: " + child.getAge());
-        System.out.println("Vaccine: " + child.getVaccineName());
-        System.out.println("Next Dose Date: " + child.getNextDoseDate());
+        System.out.println("\n--- Parent Details ---");
+        System.out.print("Enter parent name: ");
+        String parentName = scanner.nextLine();
+
+        System.out.print("Enter parent contact: ");
+        String parentContact = scanner.nextLine();
+
+        Parent parent = new Parent(parentName, parentContact, child);
+
+        System.out.println();
+        parent.generateReport();
 
         scanner.close();
     }
