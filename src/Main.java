@@ -3,6 +3,7 @@ import models.User;
 import models.Parent;
 import models.Doctor;
 import java.util.Scanner;
+import services.ReminderService;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,6 +52,11 @@ public class Main {
 
         System.out.println();
         doctorUser.generateReport();
+
+        ReminderService reminderService = new ReminderService();
+        System.out.println();
+        reminderService.sendReminder(child);
+
 
         scanner.close();
     }
