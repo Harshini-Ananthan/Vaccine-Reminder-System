@@ -6,17 +6,7 @@ A console-based Java application that helps parents and doctors manage child vac
 
 Many parents find it difficult to keep track of vaccination timelines, which may cause some doses to be missed or delayed. To solve this, we aim to build a system that records child details, maintains their vaccination history, and automatically calculates the due dates for upcoming vaccines (e.g., Polio booster at 2.5 years).
 
-🎯**Objectives**
-
-Register children along with basic details such as name, date of birth, and parent information.
-
-Calculate and display the vaccination schedule according to the child’s age.
-
-Maintain records of completed and pending vaccinations.
-
-Provide simple reports that can be used by doctors or parents for quick reference.
-
-🔑 **Planned Features**
+🔑 **Features**
 
 ✔️ Child registration and parent information storage
 
@@ -32,13 +22,13 @@ Provide simple reports that can be used by doctors or parents for quick referenc
 
 Automated reminders via email/SMS/app.
 
-User-friendly dashboard using JavaFX/Swing.
+User-friendly dashboard using JavaFX.
 
 Role-based access for doctors, parents, and administrators.
 
 🛠️ **Technology Stack**
 
-Programming Language: Java 17+
+Programming Language: Java
 
 Architecture: Object-Oriented Programming (OOP)
 
