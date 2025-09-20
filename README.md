@@ -1,5 +1,7 @@
 💉 **Vaccine Reminder System**
 
+A console-based Java application that helps parents and doctors manage child vaccination schedules. Built with strong OOP principles including encapsulation, inheritance, polymorphism, and abstraction.
+
 📌 **Problem Statement**
 
 Many parents find it difficult to keep track of vaccination timelines, which may cause some doses to be missed or delayed. To solve this, we aim to build a system that records child details, maintains their vaccination history, and automatically calculates the due dates for upcoming vaccines (e.g., Polio booster at 2.5 years).
@@ -36,7 +38,13 @@ Role-based access for doctors, parents, and administrators.
 
 🛠️ **Technology Stack**
 
-Programming Language: Java
+Programming Language: Java 17+
+
+Architecture: Object-Oriented Programming (OOP)
+
+IDE: VS Code
+
+Design Principles: Encapsulation, Inheritance, Polymorphism, Abstraction
 
 Database: MySQL
 
