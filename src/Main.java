@@ -64,6 +64,7 @@ public class Main {
                     break;
 
                 case 2:
+                    //View Parent Report
                     if (parentUser != null) {
                         reportService.generateUserReport(parentUser);
                     } else {
@@ -72,6 +73,7 @@ public class Main {
                     break;
 
                 case 3:
+                    //View Doctor Report
                     if (doctorUser != null) {
                         reportService.generateUserReport(doctorUser);
                     } else {
@@ -80,6 +82,7 @@ public class Main {
                     break;
 
                 case 4:
+                    //Send Reminder
                     if (child != null) {
                         reminderService.sendReminder(child);
                     } else {
@@ -88,6 +91,7 @@ public class Main {
                     break;
 
                 case 5:
+                    //Exit
                     running = false;
                     System.out.println("Exiting Vaccine Reminder System.");
                     break;
