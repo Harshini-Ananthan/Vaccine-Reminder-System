@@ -49,18 +49,14 @@ public class Main {
                     // Parent input
                     System.out.print("Enter parent name: ");
                     String parentName = scanner.nextLine();
-
-                    System.out.print("Enter parent contact: ");
-                    String parentContact = scanner.nextLine();
+                    String parentContact = getValidPhoneNumber(scanner, "parent");
 
                     parentUser = new Parent(parentName, parentContact, child);
 
                     // Doctor input
                     System.out.print("Enter doctor name: ");
                     String doctorName = scanner.nextLine();
-
-                    System.out.print("Enter doctor contact: ");
-                    String doctorContact = scanner.nextLine();
+                    String doctorContact = getValidPhoneNumber(scanner, "doctor");
 
                     doctorUser = new Doctor(doctorName, doctorContact, child);
 
@@ -103,4 +99,20 @@ public class Main {
 
         scanner.close();
     }
+
+    // Phone number validation method
+    public static String getValidPhoneNumber(Scanner scanner, String role) {
+        String phone;
+        while (true) {
+            System.out.print("Enter " + role + " contact (10 digits): ");
+            phone = scanner.nextLine();
+            if (phone.matches("\\d{10}")) {
+                break;
+            } else {
+                System.out.println("Invalid phone number. Please enter exactly 10 digits.");
+            }
+        }
+        return phone;
+    }
+
 }
