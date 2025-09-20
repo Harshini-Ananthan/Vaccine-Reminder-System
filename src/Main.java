@@ -64,14 +64,14 @@ public class Main {
 
                     doctorUser = new Doctor(doctorName, doctorContact, child);
 
-                    System.out.println("✅ Registration complete.");
+                    System.out.println("Registration complete.");
                     break;
 
                 case 2:
                     if (parentUser != null) {
                         reportService.generateUserReport(parentUser);
                     } else {
-                        System.out.println("⚠️ No parent registered yet.");
+                        System.out.println("No parent registered yet.");
                     }
                     break;
 
@@ -79,7 +79,7 @@ public class Main {
                     if (doctorUser != null) {
                         reportService.generateUserReport(doctorUser);
                     } else {
-                        System.out.println("⚠️ No doctor registered yet.");
+                        System.out.println("No doctor registered yet.");
                     }
                     break;
 
@@ -87,17 +87,17 @@ public class Main {
                     if (child != null) {
                         reminderService.sendReminder(child);
                     } else {
-                        System.out.println("⚠️ No child registered yet.");
+                        System.out.println("No child registered yet.");
                     }
                     break;
 
                 case 5:
                     running = false;
-                    System.out.println("👋 Exiting Vaccine Reminder System.");
+                    System.out.println("Exiting Vaccine Reminder System.");
                     break;
 
                 default:
-                    System.out.println("❌ Invalid option. Try again.");
+                    System.out.println("Invalid option. Try again.");
             }
         }
 

@@ -1,3 +1,4 @@
+//Abstract base class for system users like Parent and Doctor.
 package models;
 
 public class Doctor extends User {

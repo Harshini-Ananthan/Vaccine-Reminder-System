@@ -1,3 +1,5 @@
+//Represents a child with vaccination details.
+
 package models;
 
 public class Child {
