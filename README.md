@@ -76,6 +76,18 @@ Vaccine-Reminder-System/
 
 │── README.md
 
+**UML Diagrams**
+
+### Use Case Diagram
+![Use Case Diagram](images/usecase.png)
+
+### Class Diagram
+![Class Diagram](images/classdiagram.png)
+
+## Prototype Output
+![Console Output](images/Console_output1.png)
+![Console Output](images/Console_output2.png)
+
 🚀 **Future Scope**
 
 Integration with hospital or clinic management systems.
