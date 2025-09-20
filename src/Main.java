@@ -2,8 +2,9 @@ import models.Child;
 import models.User;
 import models.Parent;
 import models.Doctor;
-import java.util.Scanner;
 import services.ReminderService;
+import services.ReportService;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,17 +47,20 @@ public class Main {
 
         User doctorUser = new Doctor(doctorName, doctorContact, child);
 
-        // Reports using polymorphism
-        System.out.println();
-        parentUser.generateReport();
-
-        System.out.println();
-        doctorUser.generateReport();
-
+        // Services
+        ReportService reportService = new ReportService();
         ReminderService reminderService = new ReminderService();
+
+        // Generate reports
+        System.out.println();
+        reportService.generateUserReport(parentUser);
+
+        System.out.println();
+        reportService.generateUserReport(doctorUser);
+
+        // Send reminder
         System.out.println();
         reminderService.sendReminder(child);
-
 
         scanner.close();
     }
